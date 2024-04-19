@@ -31,16 +31,23 @@ const Heder = ()=>{
       <div className=' bg-primary w-[1350px]  lg:grid lg:grid-cols-2'>
         <div className='  py-3 px-3 bg-primary'>
         
-          <div className='   lg:grid grid-cols-2 '>
+          <div className='   lg:grid grid-cols-2 relative '>
             <div >
             <img src={Atlog} alt="log" width="160px"  className=" ml-6"/>
         
             </div>
             <div >
             {/* <h1 className='float-end'>Tutlke</h1> */}
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-7 h-7 text-white float-end hidden max-lg:block cursor-pointer"  onClick={navedisss} >
+
+            {dis ? <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-7 h-7 text-white float-end hidden max-lg:block cursor-pointer absolute right-0 top-0"  onClick={navedisss} >
   <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 5.25h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5"  />
-</svg>
+</svg> :<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-7 h-7 text-white float-end hidden max-lg:block cursor-pointer absolute right-0 top-0" onClick={navedisss}>
+  <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+</svg> }
+           
+
+
+
             </div>
           
           </div>
@@ -49,7 +56,7 @@ const Heder = ()=>{
          </div> */}
         </div>
         <div className={` lg:flex lg:space-x-1 bg-primary ${dis && 'max-lg:hidden'} `}>
-        <ul class= " lg:flex  lg:flex-1 mr-8  items-center justify-end gap-6  bg-primary  text-white font-mono  text-center ">
+        <ul class= " lg:flex  lg:flex-1 mr-8  items-center justify-end gap-6  bg-primary   text-white font-mono  text-center ">
              <li class="navho "><NavLink to=" ">SERVICE</NavLink></li>
              <li class="navho"><NavLink to="About">ABOUT US</NavLink></li>
              <li class="navho  "><NavLink to="Contact">CONTACT US</NavLink></li>
@@ -57,8 +64,8 @@ const Heder = ()=>{
           
 
            </ul>
-          <button className=' w-[100px] h-[40px] bg-btn-prime text-white mt-2  max-lg:hidden '>Get Start</button>
-          <button className=' w-[100px] h-[40px]  text-white mt-2   border-solid border-2  border-white max-lg:hidden  '>Get Start</button>
+          {/* <button className=' w-[100px] h-[40px] bg-btn-prime text-white mt-2  max-lg:hidden '>Get Start</button>
+          <button className=' w-[100px] h-[40px]  text-white mt-2   border-solid border-2  border-white max-lg:hidden  '>Get Start</button> */}
          
 
         </div>

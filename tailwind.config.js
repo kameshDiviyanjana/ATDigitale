@@ -11,7 +11,8 @@ module.exports = {
         'analogous1' : '#6A44F2',
         'analogous2' : '#1CBDDD',
         'barkGeen' : '#4DCA79',
-        'barkgren2':'#78BF91'
+        'barkgren2':'#78BF91',
+        'gary1' : '#e8e4f4'
       },
       screens:{
         'sm' : '320px',

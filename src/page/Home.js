@@ -3,12 +3,13 @@ import homeImages from '../Assert/TopImage.png'
 import Button from '../componets/Buttone'
 import comImage from '../Assert/imagec2.png'
 import imageSerch from '../Assert/images1.png'
+import Quetion from './Quetion'
 const Home = ()=>{
 
     return(
         <div className=" grid  grid-rows-3   ">
           <div className=" w-full lg:h-[600px]  relative    ">
-             <img src={homeImages} alt="Home log" className=" w-full lg:h-[600px] md:h-full  absolute  mix-blend-overlay  "/>
+             <img src="https://s3-alpha-sig.figma.com/img/7d26/92c3/02df419cba923b35861b32302ece4d90?Expires=1714348800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=HUyuKtVCylJXZCJJd7-hEUbl2NEiZKjsV90MWU7~LT8-w--HaOsUm6Vz2urMzkqBELOKCYHA77UFXGfJMKgURrz3BCSnAcn4276gz-O5a8VOA4IAoDAyLmb9Ls5PA3qKN~cU~UypTSdcFDZf4VdMA-nlop0a5Pa4FXHAwKg12hoMfRC8L4H1hL9vTdmPN-S7VXkg4kjWMbc65-TzkZ-LIq2E97OARNc9DCrErpaA1N2pvQuFJHnj8OeAuVRFOGqIGVVg11nbGJ3t5AsPY5-y1DF4u1H1nXzyT269P-CE6Jf0wHQNsSeSlIvCR0xV~2B8y00rOth2WIEsZcZC~hbVJQ__" alt="Home log" className=" w-full lg:h-[600px] md:h-full  absolute  mix-blend-overlay  "/>
                <div className=" lg:w-[450px] lg:h-full    ">
                 <div className=" absolute lg:bottom-0 lg:w-[490px] lg:h-[290px]   bg-gradient-to-r from-barkGeen via-barkgren2 to-analogous2 top-[250px]  lg:left-11  lg:px-3  ">
                   <h1 className="  text-5xl text-white font-serif py-3 px-3  ">We crush your competitors, goals, and sales records - without the B.S.</h1>
@@ -58,6 +59,7 @@ const Home = ()=>{
                           <img src={imageSerch}class="w-[414px] h-[414px]" alt="log" />
                    </div>
              </section>
+             <Quetion/>
         </div>
     )  
 
